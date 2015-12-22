@@ -16,5 +16,5 @@ cp ./cfg/site.conf /etc/apache2/sites-enabled/site.conf
 cp ./cfg/index.php /var/www/index.php
 
 service apache2 restart
-ip=(hostname -I)
+ip=$(hostname -I)
 echo "PHP site deployed:\n You may access it from: $ip" 
